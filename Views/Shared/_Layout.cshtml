@@ -11,25 +11,21 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="navbar-container">
+            <div class="navcontainer">
+                <div class="navbar-container">
                 <a class="navbar-brand" asp-controller="Home" asp-action="Index">Brain-Computer Interfaces</a>
-                <ul class="navbar-links">
-                    <li><a asp-controller="Home" asp-action="Index">Home</a></li>
-                    <li><a asp-controller="Home" asp-action="Choices">Technology Topic</a></li>
-                    <li><a asp-controller="Home" asp-action="Ethics">Opportunities</a></li>
-                    <li><a asp-controller="Home" asp-action="Evaluation">Risks</a></li>
-                    <li><a asp-controller="Home" asp-action="Guidelines">Choices</a></li>
-                    <li><a asp-controller="Home" asp-action="Guidelines">References</a></li>
-                    <li><a asp-controller="Home" asp-action="Guidelines">Process Support</a></li>
-                </ul>
-                @* <ul class="navbar-links" style="padding-left: 80px;">
-                    <li><a asp-controller="Home" asp-action="Choices">Technology Topic</a></li>
-                    <li><a asp-controller="Home" asp-action="Ethics">Opportunities</a></li>
-                    <li><a asp-controller="Home" asp-action="Evaluation">Risks</a></li>
-                    <li><a asp-controller="Home" asp-action="Guidelines">Choices</a></li>
-                    <li><a asp-controller="Home" asp-action="Guidelines">References</a></li>
-                    <li><a asp-controller="Home" asp-action="Guidelines">Process Support</a></li>
-                </ul> *@
+                </div>
+                <div style="align-content: center; margin-left:-150px;">
+                    <ul class="navbar-links">
+                        <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                        <li><a asp-controller="Home" asp-action="TechnologyTopic">Technology Topic</a></li>
+                        <li><a asp-controller="Home" asp-action="Ethics">Opportunities</a></li>
+                        <li><a asp-controller="Home" asp-action="Evaluation">Risks</a></li>
+                        <li><a asp-controller="Home" asp-action="Guidelines">Choices</a></li>
+                        <li><a asp-controller="Home" asp-action="Guidelines">References</a></li>
+                        <li><a asp-controller="Home" asp-action="Guidelines">Process Support</a></li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
