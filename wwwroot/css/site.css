@@ -81,6 +81,7 @@ body {
     margin: 0;
     padding: 0;
     margin-left: auto;
+    align-items:center;
 }
 
     .navbar-links li a {
@@ -92,6 +93,9 @@ body {
         .navbar-links li a:hover {
             text-decoration: underline;
         }
+.nav-link {
+    padding:0px;
+}
 .navcontainer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -103,4 +107,29 @@ body {
     align-content:center;
 }
 
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    animation: slideDown 0.3s ease-in-out;
+}
+
+    .dropdown-menu.active {
+        display: block;
+    }
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 

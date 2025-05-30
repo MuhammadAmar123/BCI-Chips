@@ -11,22 +11,33 @@
 <body>
     <header>
         <nav class="navbar">
-            <div class="navcontainer">
-                <div class="navbar-container">
+             <div class="navbar-container">
                 <a class="navbar-brand" asp-controller="Home" asp-action="Index">Brain-Computer Interfaces</a>
                 </div>
                 <div style="align-content: center; margin-left:-150px;">
                     <ul class="navbar-links">
                         <li><a asp-controller="Home" asp-action="Index">Home</a></li>
                         <li><a asp-controller="Home" asp-action="TechnologyTopic">Technology Topic</a></li>
-                        <li><a asp-controller="Home" asp-action="Ethics">Opportunities</a></li>
-                        <li><a asp-controller="Home" asp-action="Evaluation">Risks</a></li>
-                        <li><a asp-controller="Home" asp-action="Guidelines">Choices</a></li>
-                        <li><a asp-controller="Home" asp-action="Guidelines">References</a></li>
-                        <li><a asp-controller="Home" asp-action="Guidelines">Process Support</a></li>
+                        <li><a asp-controller="Home" asp-action="Opportunities">Opportunities</a></li>
+                        <li><a asp-controller="Home" asp-action="Risks">Risks</a></li>
+                        <li><a asp-controller="Home" asp-action="Choices">Choices</a></li>
+                        <li><a asp-controller="Home" asp-action="References">References</a></li>
+                        <li class="nav-item" style="margin-left:5px;">
+                            <div class="nav-item dropdown" style="margin-right:20px">
+                                <a class="nav-link dropdown-toggle" style="color:white;" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Process Support
+                                </a>
+                                <div class="dropdown-menu" style="max-width:100%; text-align:center;" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" style="color:#2b5876;" href="@Url.Action("TeamFormation", "Home" )">Team Formation</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" style="color:#2b5876;" href="@Url.Action("MeetingMinutes", "Home" )">Meeting Minutes</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" style="color:#2b5876; white-space: normal;" href="@Url.Action("GuidelineConform", "Home" )">Guideline Conformance Form</a>
+                            </div>
+                            </div>
+                        </li>
                     </ul>
-                </div>
-            </div>
+             </div>
         </nav>
     </header>
     <div class="container">
