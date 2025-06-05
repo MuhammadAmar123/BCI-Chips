@@ -133,3 +133,116 @@ body {
     }
 }
 
+.abstract-section {
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    background-color: #f9f9f9;
+    padding: 30px;
+}
+
+.abstract-text {
+    flex: 1;
+}
+
+.abstract-image {
+    flex: 1;
+    text-align: center;
+}
+
+    .abstract-image img {
+        max-width: 100%;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+
+.opportunity-page {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+    .opportunity-page h1 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+.opportunity-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+    .opportunity-section.reverse {
+        flex-direction: row-reverse;
+    }
+
+    .opportunity-section .text {
+        flex: 1;
+        min-width: 280px;
+    }
+
+    .opportunity-section .image {
+        flex: 1;
+        min-width: 280px;
+        text-align: center;
+    }
+
+    .opportunity-section img {
+        max-width: 100%;
+        max-height: 400px;
+        object-fit: contain;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+
+
+.risk-page {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+    .risk-page h1 {
+        font-size: 2.5rem;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+.risk-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+    .risk-section.reverse {
+        flex-direction: row-reverse;
+    }
+
+    .risk-section .text {
+        flex: 1;
+        min-width: 280px;
+    }
+
+    .risk-section .image {
+        flex: 1;
+        min-width: 280px;
+        text-align: center;
+    }
+
+    .risk-section img {
+        max-width: 100%;
+        max-height: 300px;
+        object-fit: contain;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+
