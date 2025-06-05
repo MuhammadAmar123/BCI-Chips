@@ -3,3 +3,84 @@
 *@
 @{
 }
+@* <h1>Technology Topic</h1> *@
+
+@{
+    ViewData["Title"] = "Technology Topic - Brain-Computer Interfaces";
+}
+
+<div class="container mt-4 mb-4">
+    <h1 class="mb-4">Technology Topic</h1>
+
+    <!-- Section 1: What is it? -->
+    <section class="mb-5">
+        <h2 class="mb-3">1. What is it?</h2>
+
+        <p>
+            <!-- Your full paragraph here -->
+            The groundwork for BCIs and modern brain research was made by the invention of electroencephalography (EEG) in 1924 by Hans Berger. His research and development of EEG allows us to read and measure electrical activity of the brain (Awuah Wireko et al., 2024). After Berger’s discovery, in 1973 Jacques Vidal coined the term Brain-Computer Interface and in 1977 in one of his experiments he was able to control a “cursor-like graphical object on a computer screen” with the use of EEG (Vijayendra et al., 2018). These two people provide the main groundwork for BCIs
+        </p>
+
+        <!-- Optional image -->
+        <div class="text-center my-4">
+            <img src="/imgs/HansBerger.jpeg" class="img-fluid rounded shadow" alt="Hans Berger, inventor of EEG" style="max-height: 300px;" />
+            <p class="text-muted">Figure 1: Hans Berger, pioneer of EEG and brain signal research</p>
+        </div>
+
+        <p>
+            <!-- Continue with your content -->
+            Brain-computer interfaces (BCIs) are achieving the goal that we only dreamt of being possible. The idea of creating a link between the human mind and external devices has now become a reality thanks to advancements in neuroengineering and computational neuroscience (Kumar et al., 2025). The definition of brain-computer interface is a system that establishes direct communication between the brain and an external device (López-Larraz, 2020). The main purpose of BCIs is to help patients who have communication and motor function impairments due to conditions like amyotrophic lateral sclerosis (ALS), stroke and spinal cord injury (Awuah Wireko et al., 2024). However, it isn’t limited to only restoring motor functions as it can be used for entertainment purposes as well such as creating immersive experiences for video games, virtual reality, determining user’s emotions and for assessing fatigue for attention-demanding jobs such as air traffic controllers or truck drivers (University of Calgary, n.d.). Currently a real-world example of BCIs today is Neuralink. Neuralink has already started the development of BCIs and has been granted approval by the FDA for human clinical trials. Their first patient, Noland Arbaugh is a quadriplegic which means paralysed from all four limbs, had a successful operation in February 2024. He was the first person to be implanted with a BCI chip and was showcased playing a game of chess and Mario Cart using only his thoughts (Kokot, 2025).
+        </p>
+    </section>
+
+    <!-- Section 2: How does it work? -->
+    <section class="mb-5">
+        <h2 class="mb-3">2. How does it work?</h2>
+
+        <p>
+            A brain-computer interface(BCI) works by interpreting the electrochemical signals that occur when a thought or decision is made. These signals occur at the synapses between neurons. BCIs capture this information using electrodes that are attached near neurons where it measures voltage and frequency and the intensity of neural spikes (Dam, 2025). A brain-computer interface (BCI) usually consists of three main parts: a device to measure brain activity, a computer to analyse and process the recorded brain activity, and lastly, a device or application to control. The device to measure brain activity can be a small brain chip, cap, headband or headset which has specially designed sensors to detect and record signals from the brain usually using methods such as EEG. The signal is then interpreted by a computer which uses specialised processing methods to try and decode the user’s desired action from the brain signal. The last part is to complete the task that the user intends to complete by sending the signal to the device or application (University of Calgary, n.d.).
+        </p>
+
+        <!-- Optional schematic image -->
+        <div class="text-center my-4">
+            <img src="/imgs/BCI-system.png" class="img-fluid rounded shadow" alt="BCI schematic" style="max-height: 400px;" />
+            <p class="text-muted">Figure 2: A simplified diagram of how a BCI system functions</p>
+        </div>
+
+    </section>
+
+    <!-- Section 3: Types of BCI -->
+    <section>
+        <h2 class="mb-3">3. Types of BCI</h2>
+
+        <p>
+            There are different types of techniques for recording brain activity. It can be measured using electroencephalography (EEG), magnetoencephalography (MEG), functional magnetic resonance imaging (fMRI), microelectrode arrays (MEAs), and electrocorticography (ECoG) (Dam, 2025). The type of technique is determined by the type of BCI being used. The two different types of BCIs are Non-Invasive and Invasive. Non-invasive BCIs can monitor the brain without surgery by using methods like EEG, MEG, or fMRI (Dam, 2025). Non-invasive BCIs are cheaper and safer due to no surgery required however they suffer with low resolution of data which results in limited applications and motor recovery (Nicolas-Alonso & Gomez-Gil, 2012)(University of Calgary, n.d.). EEG uses electrodes that are placed on the scalp to measure electrical activity. It is widely used due to its portability, affordability and good level of temporal resolution. MEG produces better resolution than EEG but requires specialised environments as it isn’t portable and it detects the brain's magnetic fields. fMRI measures the blood flow in the brain to deduce neural activity. It offers a high level of temporal resolution but cannot be used in real time due to slow signal processing (Dam, 2025). Invasive BCIs on the other hand, monitors the brain by undergoing surgery to implant them and uses the method of MEA or ECoG. Invasive BCIs have a direct connection to electrodes which possess’ high accuracy and level of temporal resolution but have significant risks due to scar tissue formation (Awuah Wireko et al., 2024). These BCIs are costly due to the surgical costs, but researchers agree this type of BCIs can be used to restore movement through prostheses due to the high level of temporal resolution in the readings of brain activity (Nicolas-Alonso & Gomez-Gil, 2012). MEA uses small electrodes placed in the cortex of the brain to track neuron activity. This is mainly used for controlling robotic limbs and neuroprosthesis. ECoG uses electrodes placed directly on the surface of the brain. This allows for a high level of accuracy and resolution of readings while reducing some risks associated with deeper implants (Nicolas-Alonso & Gomez-Gil, 2012)(University of Calgary, n.d.).
+        </p>
+
+        <!-- Optional image comparing invasive vs non-invasive -->
+        <div class="text-center my-4">
+            <img src="/imgs/Invasive+BCI+Non+Invasive.jpg" class="img-fluid rounded shadow" style="max-width:450px" alt="Invasive vs Non-Invasive BCI" />
+            <p class="text-muted">Figure 3: Visual comparison between invasive and non-invasive BCI techniques</p>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-6">
+                <h5>🧠 Non-Invasive BCIs</h5>
+                <ul>
+                    <li>EEG (scalp-based electrodes)</li>
+                    <li>MEG (brain magnetic fields)</li>
+                    <li>fMRI (blood flow tracking)</li>
+                </ul>
+                <p>Pros: Safe, no surgery needed. <br /> Cons: Lower resolution and limited real-time use.</p>
+            </div>
+            <div class="col-md-6">
+                <h5>🔬 Invasive BCIs</h5>
+                <ul>
+                    <li>MEA (implanted electrodes)</li>
+                    <li>ECoG (surface brain implants)</li>
+                </ul>
+                <p>Pros: High accuracy. <br /> Cons: Requires surgery, risk of scar tissue, expensive.</p>
+            </div>
+        </div>
+    </section>
+</div>
